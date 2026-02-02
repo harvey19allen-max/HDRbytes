@@ -1,0 +1,402 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HDRbytes | Coding & Robotics Learning Hub</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)),
+                  url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #020617;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #38bdf8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    section h2 {
+      color: #38bdf8;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 25px;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .card:focus {
+      outline: 3px solid #38bdf8;
+    }
+
+    .card:hover,
+    .card.active {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(56,189,248,0.3);
+    }
+
+    .card-details {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      margin-top: 15px;
+      transition: max-height 0.6s ease, opacity 0.4s ease;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #cbd5f5;
+    }
+
+    .card.active .card-details {
+      max-height: 2000px;
+      opacity: 1;
+    }
+
+    .card-details a {
+      color: #38bdf8;
+      text-decoration: underline;
+    }
+
+    .card code {
+      display: block;
+      background: #020617;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 10px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.9rem;
+      color: #e5e7eb;
+    }
+
+    .card i {
+      font-size: 2.5rem;
+      color: #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    .code-runner textarea {
+      width: 100%;
+      height: 180px;
+      background: #020617;
+      color: #e5e7eb;
+      font-family: 'Roboto Mono', monospace;
+      border-radius: 10px;
+      padding: 15px;
+      border: none;
+    }
+
+    .code-runner button {
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: #38bdf8;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      background: white;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #020617;
+      padding: 30px;
+      text-align: center;
+    }
+
+    footer span {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+
+<body>
+<header role="banner" aria-label="HDRbytes Coding and Robotics Hub">
+  <div>
+    <h1>HDRbytes</h1>
+    <p>An academic-friendly learning platform for coding, robotics, and future innovators — built by students of Alangilan Senior High School.</p>
+  </div>
+</header>
+
+<nav role="navigation" aria-label="Main Navigation">
+  <a href="#intro">Introduction</a>
+  <a href="#languages">Languages</a>
+  <a href="#basics">Coding Basics</a>
+  <a href="#runner">Code Runner</a>
+  <a href="#about">About Us</a>
+</nav>
+
+<main>
+  <!-- Introduction Section -->
+  <section id="intro" role="region" aria-labelledby="intro-title">
+    <h2 id="intro-title">Introduction to Coding & Programming</h2>
+    <p>Coding is the structured process of writing instructions that computers can interpret and execute.</p>
+    <p>These instructions allow machines to solve problems, automate tasks, and control physical systems such as robots.</p>
+    <p>Programming applies logic, mathematics, and problem-solving to create efficient digital solutions.</p>
+    <p>In education and research, coding supports innovation, critical thinking, and technological advancement.</p>
+  </section>
+
+  <!-- Programming Languages Section -->
+  <section id="languages" role="region" aria-labelledby="languages-title">
+    <h2 id="languages-title">Programming Languages We Focus On</h2>
+    <div class="cards">
+      <!-- Arduino Card -->
+      <div class="card" role="button" tabindex="0" aria-expanded="false" onclick="toggleExclusive(this)" onkeydown="cardKey(event,this)">
+        <i class="fas fa-robot" aria-hidden="true"></i>
+        <h3>Arduino (C/C++)</h3>
+        <p>Used in robotics, sensors, and embedded systems.</p>
+        <div class="card-details">
+          <p>Arduino is a microcontroller-based programming platform designed for controlling electronic hardware.</p>
+          <p>It reads sensor input, processes logic, and activates actuators such as motors and LEDs.</p>
+          <p>Arduino reinforces real-world problem solving through hardware-software interaction.</p>
+          <p>📘 <a href="https://www.arduino.cc/en/Guide" target="_blank">Arduino Official Guide</a></p>
+          <p>🎥 <a href="https://www.youtube.com/watch?v=fJWR7dBuc18" target="_blank">Arduino Fundamentals Tutorial</a></p>
+        </div>
+      </div>
+
+      <!-- Python Card -->
+      <div class="card" role="button" tabindex="0" aria-expanded="false" onclick="toggleExclusive(this)" onkeydown="cardKey(event,this)">
+        <i class="fas fa-brain" aria-hidden="true"></i>
+        <h3>Python</h3>
+        <p>Popular for AI, automation, and robotics research.</p>
+        <div class="card-details">
+          <p>Python is a high-level language valued for readability and simplicity.</p>
+          <p>It is used in robotics for decision-making, automation, and data analysis.</p>
+          <p>Python supports artificial intelligence and scientific computing.</p>
+          <p>📘 <a href="https://docs.python.org/3/" target="_blank">Python Documentation</a></p>
+          <p>🎥 <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" target="_blank">Python Academic Course</a></p>
+        </div>
+      </div>
+
+      <!-- HTML & CSS Card -->
+      <div class="card" role="button" tabindex="0" aria-expanded="false" onclick="toggleExclusive(this)" onkeydown="cardKey(event,this)">
+        <i class="fas fa-code" aria-hidden="true"></i>
+        <h3>HTML & CSS</h3>
+        <p>Used to create and design educational websites.</p>
+        <div class="card-details">
+          <p>HTML defines the structure of web content.</p>
+          <p>CSS controls layout, color, and responsiveness.</p>
+          <p>Together, they enable accessible academic platforms.</p>
+          <p>📘 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Reference</a></p>
+          <p>📘 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Reference</a></p>
+        </div>
+      </div>
+
+      <!-- JavaScript Card -->
+      <div class="card" role="button" tabindex="0" aria-expanded="false" onclick="toggleExclusive(this)" onkeydown="cardKey(event,this)">
+        <i class="fas fa-laptop-code" aria-hidden="true"></i>
+        <h3>JavaScript</h3>
+        <p>Makes websites interactive and dynamic.</p>
+        <div class="card-details">
+          <p>JavaScript enables real-time user interaction.</p>
+          <p>It powers dynamic learning tools and simulations.</p>
+          <p>📘 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript Reference</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coding Basics Section -->
+  <section id="basics" role="region" aria-labelledby="basics-title">
+    <h2 id="basics-title">Basic Coding Concepts (Robotics-Oriented)</h2>
+    <div class="cards">
+      <!-- Numbers Card -->
+      <div class="card" role="button" tabindex="0" aria-expanded="false" onclick="toggleExclusive(this)" onkeydown="cardKey(event,this)">
+        <h3>Numbers</h3>
+        <p>Represent numerical values.</p>
+        <div class="card-details">
+          <p>Numbers store quantities such as distance, speed, or sensor values.</p>
+          <code>
+int distance = 25;
+float temperature = 36.5;
+          </code>
+        </div>
+      </div>
+
+      <!-- Strings Card -->
+      <div class="card" role="button" tabindex="0" aria-expanded="false" onclick="toggleExclusive(this)" onkeydown="cardKey(event,this)">
+        <h3>Strings</h3>
+        <p>Store text data.</p>
+        <div class="card-details">
+          <p>Strings hold words, labels, or messages.</p>
+          <code>
+String message = "Hello, Robot!";
+          </code>
+        </div>
+      </div>
+
+      <!-- Booleans Card -->
+      <div class="card" role="button" tabindex="0" aria-expanded="false" onclick="toggleExclusive(this)" onkeydown="cardKey(event,this)">
+        <h3>Booleans</h3>
+        <p>Represent true or false values.</p>
+        <div class="card-details">
+          <p>Booleans control logic decisions.</p>
+          <code>
+boolean isActive = true;
+          </code>
+        </div>
+      </div>
+
+      <!-- AND Operator Card -->
+      <div class="card" role="button" tabindex="0" aria-expanded="false" onclick="toggleExclusive(this)" onkeydown="cardKey(event,this)">
+        <h3>AND Operator</h3>
+        <p>Combines conditions.</p>
+        <div class="card-details">
+          <p>The AND operator ensures multiple conditions are true.</p>
+          <code>
+if(sensor1 && sensor2) {
+  moveForward();
+}
+          </code>
+        </div>
+      </div>
+
+      <!-- Variable Declaration Card -->
+      <div class="card" role="button" tabindex="0" aria-expanded="false" onclick="toggleExclusive(this)" onkeydown="cardKey(event,this)">
+        <h3>Variable Declaration</h3>
+        <p>Creates a variable.</p>
+        <div class="card-details">
+          <p>Declaring a variable reserves memory.</p>
+          <code>
+int speed;
+          </code>
+        </div>
+      </div>
+
+      <!-- Variable Definition Card -->
+      <div class="card" role="button" tabindex="0" aria-expanded="false" onclick="toggleExclusive(this)" onkeydown="cardKey(event,this)">
+        <h3>Variable Definition</h3>
+        <p>Assigns a value.</p>
+        <div class="card-details">
+          <p>Defines how the variable is used.</p>
+          <code>
+speed = 10;
+          </code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Runner Section -->
+  <section id="runner" class="code-runner" role="region" aria-labelledby="runner-title">
+    <h2 id="runner-title">Interactive Code Runner</h2>
+    <textarea id="code"><h1>Hello from HDRbytes!</h1></textarea>
+    <button onclick="runCode()" aria-label="Run the code in the text area">Run Code</button>
+    <iframe id="output" title="Code output"></iframe>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" role="region" aria-labelledby="about-title">
+    <h2 id="about-title">About Us</h2>
+    <p><strong>Website Name:</strong> HDRbytes</p>
+    <p><strong>School:</strong> Alangilan Senior High School</p>
+    <p><strong>Academic Year:</strong> 2025–2026</p>
+    <p>HDRbytes was created to make coding and robotics education accessible and academic-focused.</p>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <p>© 2026 <span>HDRbytes</span></p>
+</footer>
+
+<script>
+  function runCode() {
+    const code = document.getElementById('code').value;
+    const output = document.getElementById('output');
+    output.contentDocument.open();
+    output.contentDocument.write(code);
+    output.contentDocument.close();
+  }
+
+  function toggleExclusive(selectedCard) {
+    document.querySelectorAll('.card').forEach(card => {
+      if (card !== selectedCard) {
+        card.classList.remove('active');
+        card.setAttribute('aria-expanded','false');
+      }
+    });
+    selectedCard.classList.toggle('active');
+    const expanded = selectedCard.classList.contains('active');
+    selectedCard.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  }
+
+  function cardKey(e, card) {
+    if(e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleExclusive(card);
+    }
+  }
+</script>
+</body>
+</html>
+</pre>
+        </body>
+    </html>
